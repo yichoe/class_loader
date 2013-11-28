@@ -16,6 +16,7 @@ catkin_package(
 )
 
 include_directories(include ${console_bridge_INCLUDE_DIRS} ${Boost_INCLUDE_DIRS} ${Poco_INCLUDE_DIRS})
+link_directories(${Poco_LIBRARY_DIR})
 
 set(${PROJECT_NAME}_SRCS
   src/class_loader.cpp
